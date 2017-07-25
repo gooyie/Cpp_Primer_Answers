@@ -32,9 +32,9 @@ std::list<std::deque<int>> l;
 ```cpp
 bool find(vector<int>::const_iterator begin, vector<int>::const_iterator end, int i)
 {
-	while (begin++ != end)
+	while (begin != end)
 	{
-		if (*begin == i) 
+		if (*begin++ == i)
 			return true;
     }	
     return false;
